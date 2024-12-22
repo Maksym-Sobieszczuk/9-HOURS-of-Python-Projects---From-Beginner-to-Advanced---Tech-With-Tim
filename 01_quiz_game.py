@@ -37,7 +37,7 @@ else:
     print("Incorrect!")
 
 if score == 1:
-    print(f"You got {score} question correct!")
+    print("You got 1 question correct!")
 else:
     print(f"You got {score} questions correct!")
 

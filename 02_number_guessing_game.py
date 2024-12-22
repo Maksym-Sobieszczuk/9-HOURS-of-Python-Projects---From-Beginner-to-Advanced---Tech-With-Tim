@@ -33,6 +33,6 @@ while True:
         print("You were below the number!")
 
 if guesses == 1:
-    print(f"You got it in {guesses} guess.")
+    print("You got it in 1 guess.")
 else:
     print(f"You got it in {guesses} guesses.")
