@@ -4,7 +4,7 @@ import time
 import random
 
 def start_screen(stdscr):
-    stdscr.clear()
+    stdscr.erase()
     stdscr.addstr('Welcome to the Speed Typing Test!')
     stdscr.addstr('\nPress any key to begin!')
     stdscr.refresh()
@@ -38,7 +38,7 @@ def wpm_test(stdscr):
         time_elapsed = max(time.time() - start_time, 1)
         wpm = round((len(current_text) / (time_elapsed / 60)) / 5)
 
-        stdscr.clear()
+        stdscr.erase()
         display_text(stdscr, target_text, current_text, wpm)
         stdscr.refresh()
 
